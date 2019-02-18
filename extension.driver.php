@@ -9,7 +9,6 @@
 			    }
 			}
 			catch(Exception $ex) {	
-				$extension = $this->about();
 				Administration::instance()->Page->pageAlert(__('An error occurred while installing %s. %s', array($extension['name'], $ex->getMessage())), Alert::ERROR);
 				Administration::instance()->Page->pageAlert(__('An error occurred while installing %s. %s', array($extension['name'], $ex->getMessage())), Alert::ERROR);
 				return false;
